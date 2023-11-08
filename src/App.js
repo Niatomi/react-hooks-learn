@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { MemoryRouter as Router, Routes, Route } from 'react-router-dom';
+
+import UseStatePage from './pages/UseStatePage';
+import Navbar from './components/Navbar'
+import UseEffectPage from './pages/UseEffectPage';
+import UseRefPage from './pages/UseRefPage';
+import UseMemoPage from './pages/UseMemoPage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Router>
+        <Navbar />
+        <div className='wrapper'>
+          <Routes>
+            <Route path='/' element={<UseMemoPage/>}></Route>
+            <Route path='/useMemo' element={<UseMemoPage/>}></Route>
+            <Route path='/useEffect' element={<UseEffectPage/>}></Route>
+            <Route path='/useRef' element={<UseRefPage/>}></Route>
+            <Route path='/useState' element={<UseStatePage/>}></Route>
+          </Routes>
+        </div>
+      </Router>
     </div>
   );
 }

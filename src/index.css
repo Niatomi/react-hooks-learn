@@ -5,9 +5,63 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #005B41;
+  color: white;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.wrapper {
+  width: 80%;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.btn {
+  background: #232D3F;
+  padding: 1rem;
+  border-radius: .2rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.gap {
+  gap: 1rem;
+}
+
+.nav {
+  width: 100%;
+  background: #008170;
+  padding: 1rem;
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+.pointer {
+  cursor: pointer;
+  -webkit-user-select: none;
+}
+
+.code {
+  background: black;
+  color: white;
+  border-radius: .2rem;
+  padding: 1rem;
+  overflow-x: scroll;
+  overflow: auto;
+}
+
+input {
+  background: #232D3F;
+  color: white;
+  padding: 1rem;
+  border-radius: .1rem;
 }
