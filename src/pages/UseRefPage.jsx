@@ -18,7 +18,7 @@ function UseRefPage() {
 
   return (
     <>
-      <h1>Колличество рендеров: {renderCount.current}</h1>
+      <h1>Render count: {renderCount.current}</h1>
       <div className="flex col gap">
         <input ref={inputRef} type="text" value={value} onChange={e => setValue(e.target.value)}/>
         <button className="btn" onClick={focus}>Focus</button>
