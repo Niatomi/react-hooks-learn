@@ -6,6 +6,7 @@ import Navbar from './components/Navbar'
 import UseEffectPage from './pages/UseEffectPage';
 import UseRefPage from './pages/UseRefPage';
 import UseMemoPage from './pages/UseMemoPage';
+import UseCallbackPage from './pages/UseCallbackPage';
 
 function App() {
   return (
@@ -14,11 +15,12 @@ function App() {
         <Navbar />
         <div className='wrapper'>
           <Routes>
-            <Route path='/' element={<UseMemoPage/>}></Route>
-            <Route path='/useMemo' element={<UseMemoPage/>}></Route>
-            <Route path='/useEffect' element={<UseEffectPage/>}></Route>
-            <Route path='/useRef' element={<UseRefPage/>}></Route>
-            <Route path='/useState' element={<UseStatePage/>}></Route>
+            <Route path='/' element={<UseCallbackPage/>} />
+            <Route path='/useMemo' element={<UseMemoPage/>} />
+            <Route path='/useEffect' element={<UseEffectPage/>} />
+            <Route path='/useRef' element={<UseRefPage/>} />
+            <Route path='/useState' element={<UseStatePage/>} />
+            <Route path='/useCallback' element={<UseCallbackPage/>} />
           </Routes>
         </div>
       </Router>

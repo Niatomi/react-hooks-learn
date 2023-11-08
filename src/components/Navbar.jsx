@@ -8,6 +8,7 @@ export default function Navigation() {
       <Link to='/useEffect'>UseEffect</Link>
       <Link to='/useRef'>UseRef</Link>
       <Link to='/useMemo'>UseMemo</Link>
+      <Link to='/useCallback'>UseCallback</Link>
     </div>
   )
 }
